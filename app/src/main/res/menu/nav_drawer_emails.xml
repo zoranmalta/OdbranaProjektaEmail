@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group
+        android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_outbox"
+            android:title="Outbox " />
+        <item
+            android:id="@+id/nav_account_profile_emails"
+
+            android:title="Account profile" />
+        <item
+            android:id="@+id/nav_settings_emails"
+
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout_emails"
+
+            android:title="Logout" />
+
+    </group>
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MessageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Messsage " />
+
+    <TextView
+        android:id="@+id/message_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="10dp"
+        android:text="@string/message_subject"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/message_image"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/btn_plus" />
+
+        <TextView
+            android:id="@+id/message_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/message_image"
+            android:text="From : " />
+
+        <TextView
+            android:id="@+id/message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/message_image"
+            android:layout_below="@id/message_from"
+            android:paddingTop="5dp"
+            android:text="Date : " />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="To : "
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/message_cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Cc : "
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/message_bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Bcc : "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:text="Message Content"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/attachment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

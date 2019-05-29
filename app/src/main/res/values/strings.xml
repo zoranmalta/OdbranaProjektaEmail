@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="loginLabel" tools:ignore="ExtraTranslation">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="loginHintUsername">enter your username</string>
+    <string name="labelHintPassword">enter your password</string>
+    <string name="my_toolbar">Emails</string>
+    <string name="my_toolbar_login">LoginActivity</string>
+    <string name="message_subject">subject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sync_frequency">sync_frequency</string>
+    <string name="sorted_by">sorted_by</string>
+
+    <string-array name="sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string name="title_activity_fab">Fab</string>
+    <string name="app_name">EmailApp</string>
+
+</resources>

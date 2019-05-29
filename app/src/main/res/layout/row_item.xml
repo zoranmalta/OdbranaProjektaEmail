@@ -1,0 +1,63 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/from_inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="From"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/subject_inbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_inbox"
+        android:layout_marginTop="5dp"
+        android:text="Subject"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/item_info"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_markunread_mailbox_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="32dp"
+        android:layout_toStartOf="@+id/item_info">
+
+        <TextView
+            android:id="@+id/heading_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sent to: "
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

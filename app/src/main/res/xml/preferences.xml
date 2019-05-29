@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:title="Sorted by date"
+        android:key="@string/sorted_by"
+        android:summary="Turn this option asc or desc" />
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/sync_frequency_titles"
+        android:entryValues="@array/sync_frequency_values"
+        android:key="@string/sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="sync frequency"
+        />
+
+</PreferenceScreen>
